@@ -34,7 +34,7 @@ const validator = {
             break;
           case 'min':
             if (input.value.length < rDetails[1]) {
-              return `Insira pelo menos ${rDetails[1]} Elementos!`;
+              return `Insira pelo menos ${rDetails[1]} caracteres!`;
             }
             break;
           case 'email':
@@ -42,6 +42,14 @@ const validator = {
               const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
               if (!regex.test(input.value.toLowerCase())) {
                 return 'Digite um Email Válido!';
+              }
+            }
+            break;
+          case 'especial':
+            if (input.value !== '') {
+              const regex = /\W|_/;
+              if (!regex.test(input.value.toLowerCase())) {
+                return `Utilize pelo menos um caractere especial!\nex: #,@,$;`
               }
             }
             break;

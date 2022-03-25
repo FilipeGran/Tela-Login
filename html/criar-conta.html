@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/control-password.css">
+    <title>Criar Conta</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="formulario" action="">
+            <h1>Faça seu Cadastro</h1>
+            <input type="text" name="email" id="email" data-rules="required|email" placeholder="E-Mail">
+            <span class="error-email"></span>
+            <div class="control">
+                <input type="password" class="control-itens" data-rules="required|min=8|especial" name="senha" id="senha" placeholder="Senha">
+                <img class="control-password" src="../img/visivel.png" alt="" srcset="">
+            </div>
+            <span class="error-senha"></span>
+            <button type="submit">Login</button>
+            <p>Esqueceu sua <a href="../html/senha.html">senha?</a></p>
+            <p>Já possui conta? <a href="../index.html">Entrar</a></p>
+        </form>
+        <div class="img">
+            <img src="../img/login.png" alt="" srcset="">
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/controle-senha.js"></script>
+</body>
+
+</html>
