@@ -3,7 +3,7 @@
 <h2> Descrição </h2>
 <p>
 Tela básica de login, com transição de telas, validação de inputs e controle de demonstração de senha através do JavaScript. Desolvido para fixação de
-experiência com tecnologias Front-End. Visualize a página do 
+experiência com tecnologias Front-End. Visualize a página
 <a href="https://filipegran.github.io/Tela-Login/" a>Aqui<a/>.
 </p>
 
